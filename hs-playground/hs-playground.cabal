@@ -1,20 +1,44 @@
-name:                hs-playground
-version:             0.1.0.0
--- synopsis:
--- description:
-homepage:            https://github.com/githubuser/hs-playground#readme
-license:             BSD3
-license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2019 Author name here
-category:            Web
-build-type:          Simple
-cabal-version:       >=1.10
-extra-source-files:  README.md
+cabal-version: 1.12
 
-executable hs-playground
-  hs-source-dirs:      src
-  main-is:             Main.hs
-  default-language:    Haskell2010
-  build-depends:       base >= 4.7 && < 5
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 5fc1964ebc03957ce0c950170bc2b8452434302d81942eb987e0efd8f119d2ae
+
+name:           hs-playground
+version:        0.0.0
+author:         Heneli Kailahi
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+
+library
+  exposed-modules:
+      Main
+  other-modules:
+      Paths_hs_playground
+  hs-source-dirs:
+      src
+  default-extensions: ConstraintKinds DataKinds DefaultSignatures DeriveDataTypeable DeriveGeneric EmptyDataDecls FlexibleContexts FlexibleInstances FunctionalDependencies GADTs GeneralizedNewtypeDeriving InstanceSigs LambdaCase MultiParamTypeClasses NamedFieldPuns NoImplicitPrelude NoMonomorphismRestriction OverloadedStrings PackageImports PolyKinds QuasiQuotes RankNTypes RecordWildCards ScopedTypeVariables StandaloneDeriving TemplateHaskell TupleSections TypeApplications TypeFamilies TypeOperators ViewPatterns
+  ghc-options: -Wall -Werror -Wredundant-constraints -fwarn-tabs -threaded -O2 -rtsopts -with-rtsopts=-N -with-rtsopts=-T
+  build-depends:
+      aeson
+    , base
+    , basic-prelude
+    , bytestring
+    , containers
+    , freer-simple
+    , fused-effects
+    , fused-effects-lens
+    , lens
+    , mtl
+    , polysemy
+    , servant
+    , servant-client
+    , servant-client-core
+    , servant-server
+    , stm
+    , text
+    , unordered-containers
+  default-language: Haskell2010

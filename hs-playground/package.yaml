@@ -1,0 +1,71 @@
+name:                hs-playground
+license-file:        LICENSE
+author:              Heneli Kailahi
+
+default-extensions:
+  - ConstraintKinds
+  - DataKinds
+  - DefaultSignatures
+  - DeriveDataTypeable
+  - DeriveGeneric
+  - EmptyDataDecls
+  - FlexibleContexts
+  - FlexibleInstances
+  - FunctionalDependencies
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - InstanceSigs
+  - LambdaCase
+  - MultiParamTypeClasses
+  - NamedFieldPuns
+  - NoImplicitPrelude
+  - NoMonomorphismRestriction
+  - OverloadedStrings
+  - PackageImports
+  - PolyKinds
+  - QuasiQuotes
+  - RankNTypes
+  - RecordWildCards
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TemplateHaskell
+  - TupleSections
+  - TypeApplications
+  - TypeFamilies
+  - TypeOperators
+  - ViewPatterns
+
+ghc-options:
+  - -Wall
+  - -Werror
+  - -Wredundant-constraints
+  - -fwarn-tabs
+  - -threaded
+  - -O2
+  - -rtsopts
+  - -with-rtsopts=-N
+  - -with-rtsopts=-T
+
+dependencies:
+  - aeson
+  - base
+  - basic-prelude
+  - bytestring
+  - containers
+  - lens
+  - servant
+  - servant-client
+  - servant-client-core
+  - servant-server
+  - stm
+  - text
+  - unordered-containers
+  - mtl
+  - fused-effects
+  - fused-effects-lens
+  - freer-simple
+  - polysemy
+
+
+library:
+  source-dirs: src
