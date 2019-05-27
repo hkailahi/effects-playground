@@ -60,10 +60,12 @@ dependencies:
   - stm
   - text
   - unordered-containers
-  - mtl
+
+  - extensible-effects
   - fused-effects
   - fused-effects-lens
   - freer-simple
+  - mtl
   - polysemy
 
 

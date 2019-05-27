@@ -38,10 +38,9 @@ packages:
 # using the same syntax as the packages field.
 # (e.g., acme-missiles-0.3)
 extra-deps:
-- fused-effects-lens-0.1.0.0@sha256:881c08793ce23bca3096991a1dc39ba8f06dca46fb6a88b24f6d1f422923451e
-- polysemy-0.2.0.0@sha256:e72ab018a40ab290701ae0ee090c45ceb16e317aec3188945db998dfa3965002
-# - polysemy
-# - fused-effects-lens
+- fused-effects-lens-0.1.0.0
+- polysemy-0.2.0.0
+- extensible-effects-5.0.0.1
 
 # Override default flag values for local packages and extra-deps
 # flags: {}

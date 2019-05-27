@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 5fc1964ebc03957ce0c950170bc2b8452434302d81942eb987e0efd8f119d2ae
+-- hash: 59e90bc977a716c909eabe1495b0791d5c8c25cc281677a53cf7da903cb9c983
 
 name:           hs-playground
 version:        0.0.0
@@ -15,7 +15,12 @@ build-type:     Simple
 
 library
   exposed-modules:
+      Eff.Types
       Main
+      Papers.Extensible.Framework.ArbEffects
+      Papers.Extensible.Framework.FullLib
+      Papers.Extensible.Framework.OpenUnions
+      Papers.Extensible.Framework.Reader
   other-modules:
       Paths_hs_playground
   hs-source-dirs:
@@ -28,6 +33,7 @@ library
     , basic-prelude
     , bytestring
     , containers
+    , extensible-effects
     , freer-simple
     , fused-effects
     , fused-effects-lens
