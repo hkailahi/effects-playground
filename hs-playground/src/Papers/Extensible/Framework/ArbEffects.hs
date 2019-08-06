@@ -12,7 +12,7 @@ data VE w r
 -- |`Eff` generalized for arbitrary effects
 -- The coroutine monad is indexed by the type of requests `r` that the coroutine may send
 newtype Eff r a = Eff
-  { runEff :: forall w. (a -> VE w r) -> VE w r}
+  { runEff :: forall w. (a -> VE w r) -> VE w r }
 
 instance Functor (Eff r) where
   fmap f (Eff x) = Eff $ \x' -> x (x' . f)
